@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header .opacity-bg {
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.v-middle {
+    z-index: 10;
+}
+
+
+.caption h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 55px;
+
+}
+
+.caption h2::after {
+    content: "";
+    margin-left: 10px;
+    animation: typing 7s ease-in-out infinite;
+}
+
+.scial-icons>span a {
+
+    background: #00000056;
+
+}
+
+@keyframes typing {
+    0% {
+        content: "|"
+    }
+
+    10% {
+        content: "de|"
+    }
+
+    20% {
+        content: "desi|"
+    }
+
+    30% {
+        content: "design|"
+    }
+
+    40% {
+        content: "designer|"
+    }
+
+    50% {
+        content: "|"
+    }
+
+    51% {
+        content: "de|"
+    }
+
+    60% {
+        content: "develo|"
+    }
+
+    65% {
+        content: "developer|"
+    }
+
+
+    70% {
+        content: "|"
+    }
+
+    80% {
+        content: " larry da|"
+    }
+
+    90% {
+        content: " larry dani|"
+    }
+
+    100% {
+        content: "larry daniels|"
+    }
+}
+
+.navbar {
+    z-index: 99;
+}
+
+.navbar ul li a {
+    color: #fff;
+}
+
+@media screen and (max-width:992px) {
+    .navbar ul {
+        background-color: #fff;
+        text-align: center;
+        height: 50%;
+    }
+
+    .navbar ul li a {
+        color: #000;
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+        color: #000;
+    }
+
+}
+
+@media (min-width:993px) {
+    .navbar ul li a {
+        position: relative;
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+        color: #fff;
+    }
+
+    .navbar ul li a::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0;
+        height: 4px;
+        border-bottom: 2px solid #fff;
+        transition: all 0.5s;
+    }
+
+    .navbar ul li a:hover::after {
+        width: 95%;
+    }
+}
+
+.showe {
+    background-color: #000;
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-img::after {
+    content: " ";
+    position: absolute;
+    top: 34px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/dots.png);
+    z-index: -1;
+
+}
+
+.services {
+    background-color: #f4f4f4;
+}
+
+.h2photo {
+    position: relative;
+    z-index: 4;
+}
+
+.h2photo::after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    bottom: -15px;
+    width: 10%;
+    height: 30px;
+    margin: auto;
+    background-image: url(../imgs/dots.png);
+    z-index: -1;
+
+
+}
+
+@media (max-width:767px) {
+    .content {
+        margin-top: 50px;
+    }
+
+    .pro2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btns {
+        margin-top: 20px;
+    }
+}
+
+.services i {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.services i:hover {
+    background-color: black;
+    color: #fff;
+
+}
+/* .row img{
+    background-color: #000;
+} */
+.img-item{
+    position: relative;
+}
+.item-img-overlay
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+
+}
+.team .item-img-overlay{
+    height: 70%;
+}
+ .img-item:hover .item-img-overlay {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.team .item-img-overlay{
+    transform: rotatey(180deg);
+}
+.team .img-item:hover .item-img-overlay{
+transform: rotate(0deg);
+height: 85%;
+}
+.testmoinal{
+    background-color: #f4f4f4;
+}
+.photocorsoial{
+    width: 70px;
+    height: 70px;
+    
+}
+.dot{
+    width: 7px !important;
+    height: 7px !important;
+}
+.team{
+    background-color: #f4f4f4;
+}
+.v{
+    background-color: gray;
+}
+.contact i{
+    background-color: #f4f4f4;
+}
+.contact i:hover{
+    background-color: #000;
+    color: #fff !important;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+}
